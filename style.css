@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Rethink+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+ 
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1230px;
+    font-family:'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+input:hover { 
+    border-color: #2EC4B6;
+}
+ select:hover{
+    border-color: #2EC4B6;
+ }
+
+#container {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.sec1, .sec2 {
+    width: 600px;
+}
+.sec1-container {
+    width: 450px;
+    margin: auto;
+    height: 280px;
+    margin-top: 100px;  
+} 
+.logo img {
+    width: 78px;
+    height: 80px;
+    margin-bottom: 15px
+}
+.sec1 h2 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+.sec1 p {
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+.sec2-container {
+    border:1px solid #2EC4B6;
+    width: 500px;
+    height: 90vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); 
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 25px;
+    
+}
+.form-content {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    line-height: 1.5rem;
+}
+.sub-form{
+    width: 100%;
+}
+.sub-form  input, select {
+    border: 1px solid lightgray;
+    width: 90%;
+    height: 40px;
+}
+::placeholder{
+    font-weight: lighter;
+    padding: 10px;
+}
+::-webkit-datetime-edit { 
+    padding:10px; 
+    color: lightslategray;
+}
+::-webkit-calendar-picker-indicator {
+    padding:10px; 
+    color: lightgray;
+ }
+ 
+.formContent {
+    width: 500px;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+.subForm {
+   width: 100%;
+   padding-bottom: 12px;
+}
+.subForm input {
+    border: 1px solid lightgray;
+    width: 95%;
+    height:40px;
+}
+.subForm > select {
+    border: 1px solid lightgray;
+    width: 95%;
+}
+.footnote {
+    padding: 7px 0;
+}
+#btn {
+    width: 95%;
+    height:35px;
+    background-color: #2EC4B6;
+    border: #2EC4B6;
+    border-radius: 3px;
+}
+.foot-text {
+    font-size: 13px;
+    padding: 10px 10px 0;
+}
+.foot-text a {
+    color: #2EC4B6;
+    text-decoration: underline;
+}
+@media screen and (max-width:500px) {
+    #container {
+        max-width: 500px;
+        height: 200vh;
+        display: inline-block; 
+    }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+    .sec1, .sec2 {
+        width: 450px;
+        font-size: 14px;
+    }
+    .sec1-container{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 15px;
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .sec2-container {
+        border:1px solid #2EC4B6;
+        width: 95%;
+        height: 100%;
+        margin-top: -20px;
+        margin-left: 30px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); 
+}
+    .form{
+        width: 400px;
+    }
+    .form-content {
+        display: inline-block;
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        line-height: 1.5rem;
+}
+.sub-form{
+    padding: 10px 0;
+}
+.subForm {
+    width: 95%;
+    padding-bottom: 12px;
+ }
+ #btn {
+    width: 91%;
+    height:35px;
+    }
+    .foot-text{
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+    }
+   
+  
+}
+    
